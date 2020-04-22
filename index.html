@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVCS</title>
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div id="overlay11" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">NEW FILE</div>
+            <div onclick="CloseOverlay(11);" class="close">X</div>
+            <div class="menutext">
+                <p>A new file option will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay12" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">OPEN FILE</div>
+            <div onclick="CloseOverlay(12);" class="close">X</div>
+            <div class="menutext">
+                <p>An open file option will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay13" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">SAVE FILE</div>
+            <div onclick="CloseOverlay(13);" class="close">X</div>
+            <div class="menutext">
+                <p>A save file option will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay14" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">EXPORT TO PDF</div>
+            <div onclick="CloseOverlay(14);" class="close">X</div>
+            <div class="menutext">
+                <p>An export to PDF option will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay15" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">EXPORT TO EXCEL</div>
+            <div onclick="CloseOverlay(15);" class="close">X</div>
+            <div class="menutext">
+                <p>An export to Excel option will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay1" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">WATER VOLUME</div>
+            <div onclick="CloseOverlay(1);" class="close">X</div>
+            <div class="menutext">
+                <p>A water volume calculator will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay2" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">CONVERTER</div>
+            <div onclick="CloseOverlay(2);" class="close">X</div>
+            <div class="menutext">
+                <p>A converter will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay3" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">DIMENSIONS</div>
+            <div onclick="CloseOverlay(3);" class="close">X</div>
+            <div class="menutext">
+                <p>Dimension settings will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay4" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">LANGUAGE</div>
+            <div onclick="CloseOverlay(4);" class="close">X</div>
+            <div class="menutext">
+                <p>Language selection will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay5" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">DARK MODE</div>
+            <div onclick="CloseOverlay(5);" class="close">X</div>
+            <div class="menutext">
+                <p>Dark mode will be added in a future update.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay6" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">INSTRUCTIONS</div>
+            <div onclick="CloseOverlay(6);" class="close">X</div>
+            <div class="menutext">
+                <p>1. Choose fluid from the dropdown menu</p>
+                <p>2. If the fluid is different than water - input the percent of the fluid</p>
+                <p>
+                    3. Fill in all fields from the section “Input Data” <br>
+                    * You can view more info about them in the section “Legends”
+                </p>
+                <p>4. Click the button to start the calculation</p>
+                <p>5. You can see the results in the section “Output Data”</p>
+                <p>6. You can view more info in the section “Diagram”</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay7" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">LEGEND</div>
+            <div onclick="CloseOverlay(7);" class="close">X</div>
+            <div class="menutext">
+                <p>V<sub>sys</sub> - water quantity in the system</p>
+                <p>t<sub>S</sub> - submission temperature</p>
+                <p>t<sub>F</sub> - filling temperature</p>
+                <p>H<sub>st</sub> - static height</p>
+                <p>V<sub>calc</sub> - minimal required vessel volume</p>
+                <p>V<sub>n</sub> - nominal vessel volume</p>
+                <p>p<sub>st</sub> - static pressure</p>
+                <p>p<sub>0</sub> - minimum working pressure</p>
+                <p>p<sub>ini</sub> - initial pressure</p>
+                <p>p<sub>fil</sub> - pressure for filling</p>
+                <p>p<sub>fin</sub> - final pressure</p>
+                <p>p<sub>pzh</sub> - pressure reducer pressure</p>
+                <p>p<sub>sv</sub> - safety valve pressure</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay8" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">CONTACTS</div>
+            <div onclick="CloseOverlay(8);" class="close">X</div>
+            <div class="menutext">
+                <p>Currently the contact information is being discussed.</p>
+            </div>
+        </div>
+    </div> 
+
+    <div id="overlay9" class="overlay">
+        <div class="menuwindow overlaycontent">
+            <div class="menuheader">ABOUT</div>
+            <div onclick="CloseOverlay(9);" class="close">X</div>
+            <div class="menutext">
+                <p>The program is made according to BDS EN 12828</p>
+                <p>Program version: 1.0.0</p>
+            </div>
+        </div>
+    </div> 
+
+    <div class="container">
+        <header>HEADER</header>
+
+        <main>
+            <!-- MENU -->
+            <div class="menu">
+
+                <div class="logo">DEVCS</div>
+                <div class="dropdown menuitem">
+                    <span>File</span>
+                    <div class="dropdown-content">
+                    <p onclick="showOverlay(11);">New</p>
+                    <p onclick="showOverlay(12);">Open</p>
+                    <p onclick="showOverlay(13);">Save</p>
+                    </div>
+                </div>
+                <div class="dropdown menuitem">
+                    <span>Export</span>
+                    <div class="dropdown-content">
+                    <p onclick="showOverlay(14);">To PDF</p>
+                    <p onclick="showOverlay(15);">To EXCEL</p>
+                    </div>
+                </div>
+                <div class="dropdown menuitem">
+                    <span>Instruments</span>
+                    <div class="dropdown-content">
+                    <p onclick="showOverlay(1);">Water Volume</p>
+                    <p onclick="showOverlay(2);">Converter</p>
+                    </div>
+                </div>
+                <div class="dropdown menuitem">
+                    <span>Settings</span>
+                    <div class="dropdown-content">
+                    <p onclick="showOverlay(3);">Dimensions</p>
+                    <p onclick="showOverlay(4);">Language</p>
+                    <p onclick="showOverlay(5);">Dark Mode</p>
+                    </div>
+                </div>
+                <div class="dropdown menuitem">
+                    <span>Help</span>
+                    <div class="dropdown-content">
+                    <p onclick="showOverlay(6);">Instructions</p>
+                    <p onclick="showOverlay(7);">Legend</p>
+                    <p onclick="showOverlay(8);">Contacts</p>
+                    <p onclick="showOverlay(9);">About</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- DIAGRAM -->
+            <div id="diagram" class="diagram">
+                <div onclick="diagramSwitch('model');" id="modelSection" class="modelSection">
+                    MODEL
+                </div>
+                <div onclick="diagramSwitch('diagram');" id="diagramSection" class="diagramSection">
+                    DIAGRAM
+                </div>
+                <div id="diagramView" class="diagramView">
+
+                    <div id="model3d" class="model3d">
+                        <div class="sketchfab-embed-wrapper">
+                            <iframe title="A 3D model"
+                                src="https://sketchfab.com/models/cd5f349389ff4cda863245bb0c663c8a/embed?autostart=0&amp;camera=0&amp;preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
+                                frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true">
+                            </iframe>
+                            <!-- Original link: https://sketchfab.com/3d-models/300l-rectangular-thermal-store-cd5f349389ff4cda863245bb0c663c8a -->
+                        </div>
+                    </div>
+
+                    <div id="pressures" class="pressures">
+
+                        <div class="inputGroup">
+                            <label class="firstLabel" for="pressure1">p<sub>sv</sub></label>
+                            <input type="text" id="pressure1" name="pressure1" value="0.00" readonly>
+                            <label class="lastLabel" for="pressure1">bar</label>
+                        </div>
+                        <div class="inputGroup">
+                            <label class="firstLabel" for="pressure2">p<sub>PZH</sub></label>
+                            <input type="text" id="pressure2" name="pressure2" value="0.00" readonly>
+                            <label class="lastLabel" for="pressure2">bar</label>
+                        </div>
+                        <div class="inputGroup">
+                            <label class="firstLabel" for="pressure3">p<sub>fin</sub></label>
+                            <input type="text" id="pressure3" name="pressure3" value="0.00" readonly>
+                            <label class="lastLabel" for="pressure3">bar</label>
+                        </div>
+                        <div class="inputGroup">
+                            <label class="firstLabel" for="pressure4">p<sub>fil</sub></label>
+                            <input type="text" id="pressure4" name="pressure4" value="0.00" readonly>
+                            <label class="lastLabel" for="pressure4">bar</label>
+                        </div>
+                        <div class="inputGroup">
+                            <label class="firstLabel" for="pressure5">p<sub>ini</sub></label>
+                            <input type="text" id="pressure5" name="pressure5" value="0.00" readonly>
+                            <label class="lastLabel" for="pressure5">bar</label>
+                        </div>
+                        <div class="inputGroup">
+                            <label class="firstLabel" for="pressure6">p<sub>0</sub></label>
+                            <input type="text" id="pressure6" name="pressure6" value="0.00" readonly>
+                            <label class="lastLabel" for="pressure6">bar</label>
+                        </div>
+                        <div class="inputGroup">
+                            <label class="firstLabel" for="pressure7">p<sub>st</sub></label>
+                            <input type="text" id="pressure7" name="pressure7" value="0.00" readonly>
+                            <label class="lastLabel" for="pressure7">bar</label>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- INPUT -->
+            <div class="inputData">
+                <form action="#" autocomplete="off" >
+
+                    <div class="formHeader">INPUT DATA</div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="input1">Fluid</label>
+                        <select id="inputfluid">
+                            <option value="water">Water</option>
+                            <option value="ethylene">Ethylene Glycol</option>
+                            <option value="propylene">Propylene Glycol</option>
+                        </select>
+                        <label class="lastLabel" for="input1"></label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="input2"></label>
+                        <input type="text" id="input2" name="input2" required>
+                        <label class="lastLabel" for="input2">%</label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="input3">V<sub>SYS</sub></label>
+                        <input type="text" id="input3" name="input3" required>
+                        <label class="lastLabel" for="input3">dm<sup>3</sup></label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="input4">t<sub>S</sub></label>
+                        <input type="text" id="input4" name="input4" required>
+                        <label class="lastLabel" for="input4">&#176C</label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="input5">t<sub>F</sub></label>
+                        <input type="text" id="input5" name="input5" required>
+                        <label class="lastLabel" for="input5">&#176C</label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="input6">H<sub>st</sub></label>
+                        <input type="text" id="input6" name="input6" required>
+                        <label class="lastLabel" for="input6">m</label>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <!-- OUTPUT -->
+            <div class="outputData">
+                <form action="#" autocomplete="off" >
+
+                    <div class="formHeader">OUTPUT DATA</div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="output1">V<sub>calc</sub></label>
+                        <input type="text" id="output1" name="output1" readonly>
+                        <label class="lastLabel" for="output1">dm<sup>3</sup></label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="output2">V<sub>n</sub></label>
+                        <input type="text" id="output2" name="output2" readonly>
+                        <label class="lastLabel" for="output2">dm<sup>3</sup></label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="output3">p<sub>ini</sub></label>
+                        <input type="text" id="output3" name="output3" readonly>
+                        <label class="lastLabel" for="output3">bar</label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="output4">p<sub>fil</sub></label>
+                        <input type="text" id="output4" name="output4" readonly>
+                        <label class="lastLabel" for="output4">bar</label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="output5">p<sub>temp</sub></label>
+                        <input type="text" id="output5" name="output5" readonly>
+                        <label class="lastLabel" for="output5">bar</label>
+                    </div>
+
+                    <div class="inputGroup">
+                        <label class="firstLabel" for="output6">p<sub>temp</sub></label>
+                        <input type="text" id="output6" name="output6" readonly>
+                        <label class="lastLabel" for="output6">bar</label>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="calcButton" onclick="expansionVesselCalc();">
+                CALCULATE
+            </div>
+
+            <!-- STATUS -->
+            <div class="statusMessage">
+                <div id="statusMessage"><b>Status:</b> Waiting.</div> <!-- Waiting, Calculating, Done -->
+            </div>
+        </main>
+
+        <footer>FOOTER</footer>
+    </div>
+
+
+    <script src="script.js"></script> 
+</body>
+</html>
