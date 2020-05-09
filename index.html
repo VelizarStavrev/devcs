@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEVCS</title>
-    <link rel="icon" href="favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
 </head>
 <body>
     
@@ -178,43 +178,52 @@
             <div class="menu">
 
                 <div class="logo">DEVCS</div>
-                <div class="dropdown menuitem">
-                    <span>File</span>
-                    <div class="dropdown-content">
-                    <p onclick="showOverlay(11);">New</p>
-                    <p onclick="showOverlay(12);">Open</p>
-                    <p onclick="showOverlay(13);">Save</p>
+
+                <div onclick="menuToggle();" class="hamburger menuitem"><img src="/images/icon_hamburger.svg" alt="menu"></div>
+
+                <div id="hamburgermenu" class="hamburgermenu">
+                    <div class="dropdown menuitem">
+                        <span>File</span>
+                        <div class="dropdown-content">
+                        <p onclick="showOverlay(11);">New</p>
+                        <p onclick="showOverlay(12);">Open</p>
+                        <p onclick="showOverlay(13);">Save</p>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown menuitem">
-                    <span>Export</span>
-                    <div class="dropdown-content">
-                    <p onclick="showOverlay(14);">To PDF</p>
-                    <p onclick="showOverlay(15);">To EXCEL</p>
+
+                    <div class="dropdown menuitem">
+                        <span>Export</span>
+                        <div class="dropdown-content">
+                        <p onclick="showOverlay(14);">To PDF</p>
+                        <p onclick="showOverlay(15);">To EXCEL</p>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown menuitem">
-                    <span>Instruments</span>
-                    <div class="dropdown-content">
-                    <p onclick="showOverlay(1);">Water Volume</p>
-                    <p onclick="showOverlay(2);">Converter</p>
+
+                    <div class="dropdown menuitem">
+                        <span>Instruments</span>
+                        <div class="dropdown-content">
+                        <p onclick="showOverlay(1);">Water Volume</p>
+                        <p onclick="showOverlay(2);">Converter</p>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown menuitem">
-                    <span>Settings</span>
-                    <div class="dropdown-content">
-                    <p onclick="showOverlay(3);">Dimensions</p>
-                    <p onclick="showOverlay(4);">Language</p>
-                    <p onclick="showOverlay(5);">Dark Mode</p>
+
+                    <div class="dropdown menuitem">
+                        <span>Settings</span>
+                        <div class="dropdown-content">
+                        <p onclick="showOverlay(3);">Dimensions</p>
+                        <p onclick="showOverlay(4);">Language</p>
+                        <p onclick="showOverlay(5);">Dark Mode</p>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown menuitem">
-                    <span>Help</span>
-                    <div class="dropdown-content">
-                    <p onclick="showOverlay(6);">Instructions</p>
-                    <p onclick="showOverlay(7);">Legend</p>
-                    <p onclick="showOverlay(8);">Contacts</p>
-                    <p onclick="showOverlay(9);">About</p>
+
+                    <div class="dropdown menuitem">
+                        <span>Help</span>
+                        <div class="dropdown-content">
+                        <p onclick="showOverlay(6);">Instructions</p>
+                        <p onclick="showOverlay(7);">Legend</p>
+                        <p onclick="showOverlay(8);">Contacts</p>
+                        <p onclick="showOverlay(9);">About</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -236,7 +245,6 @@
                                 src="https://sketchfab.com/models/cd5f349389ff4cda863245bb0c663c8a/embed?autostart=0&amp;camera=0&amp;preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1"
                                 frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true">
                             </iframe>
-                            <!-- Original link: https://sketchfab.com/3d-models/300l-rectangular-thermal-store-cd5f349389ff4cda863245bb0c663c8a -->
                         </div>
                     </div>
 
@@ -384,7 +392,7 @@
 
             <!-- STATUS -->
             <div class="statusMessage">
-                <div id="statusMessage"><b>Status:</b> Waiting.</div> <!-- Waiting, Calculating, Done -->
+                <div id="statusMessage"><b>Status:</b> Waiting.</div>
             </div>
         </main>
 

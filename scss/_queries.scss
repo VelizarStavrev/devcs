@@ -1,0 +1,195 @@
+/* MEDIA QUERIES */
+@media only screen and (max-width: 750px) {
+    .container {
+        grid-template-rows: 55px auto 55px;
+    }
+    
+    main {
+        max-width: auto;
+        grid-template-columns: 0px auto 0px;
+        /*                  1    2    3    4    5    6    7    8    9    10   11   12 */
+        grid-template-rows: auto 20px auto 20px auto 20px auto 20px auto 20px auto 20px;
+        grid-template-areas: 'menu menu menu'
+                             '. .               .'
+                             '. inputData       .'
+                             '. .               .'
+                             '. calcButton      .' 
+                             '. .               .'
+                             '. statusMessage   .'
+                             '. .               .'
+                             '. outputData      .'
+                             '. .               .'
+                             '. diagram         .'
+                             '. .               .';
+    }
+    
+    /* MENU SECTION */
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    
+    .hamburger {
+        display: flex;
+        margin: 10px 0;
+    
+        img {
+            height: 35px;
+        }
+    }
+
+    .hamburgermenu {
+        display: none;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .menuitem {
+        margin-left: 0px;
+    }
+    
+    /* DIAGRAM SECTION */  
+    .diagram {
+        /* padding-bottom: 27.5px; */
+        padding-bottom: 0px;
+    }  
+
+    .pressures {
+        margin-top: 7.5px;
+    }
+    
+    /* INPUT DATA SECTION */
+    .inputData {
+        padding-bottom: 20px;
+    }
+    
+    /* OUTPUT DATA SECTION */
+    .outputData {
+        padding-bottom: 20px;
+    }
+    
+    /* BUTTON SECTION */
+    .calcButton {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 751px) {
+    .container {
+        grid-template-rows: 55px auto 55px;
+    }
+    
+    main {
+        grid-area: main;
+        height: 100%;
+        width: 100%;
+        max-width: auto;
+        display: grid;
+        /*                     1  2   3  4   5  6   7 */
+        grid-template-columns: 20px auto 20px auto 20px;
+        /*                  1    2    3    4    5    6    7    8 */
+        grid-template-rows: 30px 20px auto 20px auto 20px auto 20px;
+        grid-template-areas: 'menu menu menu menu menu'
+                             '. . . . .'
+                             '. diagram diagram diagram .'
+                             '. . . . .'
+                             '. inputData . outputData .'
+                             '. . . . .'
+                             '. calcButton . statusMessage .'
+                             '. . . . .';
+    }
+
+    /* DIAGRAM SECTION */  
+    .diagram {
+        padding-bottom: 0px;
+    }  
+
+    .pressures {
+        margin-top: 7.5px;
+    }
+    
+    /* INPUT DATA SECTION */
+    .inputData {
+        padding-bottom: 25px;
+    }
+    
+    /* OUTPUT DATA SECTION */
+    .outputData {
+        padding-bottom: 25px;
+    }
+    
+    /* BUTTON SECTION */
+    .calcButton {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-areas: 'header' 'main' 'footer';
+        justify-items: center;
+        align-items: center;
+    }
+    
+    main {
+        grid-area: main;
+        height: 100%;
+        width: 100%;
+        max-width: 1400px;
+        display: grid;
+        /*                     1  2   3  4   5  6   7 */
+        grid-template-columns: 20px auto 20px 300px 20px 300px 20px;
+        /*                  1  2  3   4  5    6 */
+        grid-template-rows: 30px 20px auto 20px 40px 20px;
+        grid-template-areas: 'menu menu menu menu menu menu menu'
+                             '. . . . . . .'
+                             '. diagram . inputData . outputData .'
+                             '. diagram . . . . .'
+                             '. diagram . calcButton . statusMessage .'
+                             '. . . . . . .';
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    main {
+        grid-area: main;
+        height: 100%;
+        width: 100%;
+        max-width: 1400px;
+        /* max-height: 600px; */
+        display: grid;
+        /*                     1  2   3  4   5  6   7 */
+        grid-template-columns: 20px auto 20px 300px 20px 300px 20px;
+        /*                  1  2  3   4  5    6 */
+        grid-template-rows: 30px 20px 400px 20px 40px auto;
+        grid-template-areas: 'menu menu menu menu menu menu menu'
+                             '. . . . . . .'
+                             '. diagram . inputData . outputData .'
+                             '. diagram . . . . .'
+                             '. diagram . calcButton . statusMessage .'
+                             '. . . . . . .';
+    }
+
+    form .inputGroup {
+        margin-top: 32.5px;
+    }
+
+    .pressures {
+        height: auto;
+    }
+
+    .pressures .inputGroup {
+        margin-top: 35px;
+    }
+}

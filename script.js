@@ -2,6 +2,16 @@
 // by Velizar Stavrev
 // JS Version
 
+// Hamburger Menu
+const menuToggle = () => {
+    let menuvis = document.getElementById('hamburgermenu').style.display;
+    if (menuvis == 'flex') {
+        document.getElementById('hamburgermenu').style.display = 'none';
+    } else {
+        document.getElementById('hamburgermenu').style.display = 'flex';
+    }
+}
+
 // Menu overlay
 const showOverlay = (number) => {
     switch (number) {
