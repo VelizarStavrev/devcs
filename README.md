@@ -3,7 +3,7 @@ A tool for selection of the nominal volume for diaphragm expansion vessels.
 
 This site is a redesign of my bachelors project which was made on another platform - MATLAB(GUI). The core concept is kept, but brand colors (blue and white) are taken into consideration.
 
-The SASS file is left intentionally for viewing purposes.
+The SASS folder is left intentionally for viewing purposes.
 
 ## I. Main Features
 **1.** JavaScript calculations  
