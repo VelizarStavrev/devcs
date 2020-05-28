@@ -113,9 +113,9 @@ const diagramSwitch = (button) => {
     
     if (button == 'diagram') {
         document.getElementById("modelSection").style.backgroundColor = 'transparent';
-        document.getElementById("modelSection").style.color = '#0064C8';
+        document.getElementById("modelSection").style.color = '#0047ab';
         document.getElementById("modelSection").style.fontWeight = 'normal';
-        document.getElementById("diagramSection").style.backgroundColor = '#0064C8';
+        document.getElementById("diagramSection").style.backgroundColor = '#0047ab';
         document.getElementById("diagramSection").style.color = 'white';
         document.getElementById("diagramSection").style.fontWeight = 'bold';
         document.getElementById("pressures").style.display = 'flex';
@@ -123,9 +123,9 @@ const diagramSwitch = (button) => {
         document.getElementById("diagram").style.paddingBottom = '27.5px';
     } else {
         document.getElementById("diagramSection").style.backgroundColor = 'transparent';
-        document.getElementById("diagramSection").style.color = '#0064C8';
+        document.getElementById("diagramSection").style.color = '#0047ab';
         document.getElementById("diagramSection").style.fontWeight = 'normal';
-        document.getElementById("modelSection").style.backgroundColor = '#0064C8';
+        document.getElementById("modelSection").style.backgroundColor = '#0047ab';
         document.getElementById("modelSection").style.color = 'white';
         document.getElementById("modelSection").style.fontWeight = 'bold';
         document.getElementById("pressures").style.display = 'none';
